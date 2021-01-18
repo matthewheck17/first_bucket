@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#master {
+    height: 100vh;
+    width: 100%;
+    background: #1E1E1E;
+    color: #C6937D;
+}
+
+#home-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+#home-link img {
+    height: 70px;
+}
+
+#home-link img:hover {
+    filter: brightness(50%)
+}
+
+#responsive-team-logo {
+    display: none;
+    position: absolute;
+    top: 20px;
+    height: 75px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+}
+
+#flex-container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #1E1E1E;
+    text-align: center;
+}
+
+.flex-item {
+    margin: 0 40.5px;
+    padding: 0 8px;
+}
+
+#stats {
+    min-width: 315px;
+    max-height: 410px;
+    overflow: scroll;
+}
+
+#logo {
+    width: 200px;
+}
+
+.opponent-logo {
+    position: absolute;
+    top: 5px;
+    right: 110px;
+    height: 20px;
+}
+
+.player-name {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.first-team {
+    position: absolute;
+    right: 60px;
+    top: 5px;
+}
+
+.first-overall {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+#game-heading {
+    position: sticky;
+    top: 0;
+    height: 30px;
+    text-align: left;
+    background: #000;
+    color: #FFF;
+    z-index: 1;
+}
+
+.heading {
+    position: relative;
+    top: 5px;
+}
+
+#player-heading {
+    padding-left: 5px;
+}
+
+#vs-heading {
+    position: absolute;
+    right: 110px;
+}
+
+#first-team-heading {
+    position: absolute;
+    right: 50px;
+}
+
+#first-overall-heading {
+    position: absolute;
+    right: 5px;
+}
+
+.game {
+    position: relative;
+    background: #1E1E1E;
+    text-align: center;
+    height: 30px;
+}
+
+.game:nth-child(even) {
+    background: #101010;
+}
+
+.game:nth-child(even) {
+    color: #bababa;
+}
+
+.shadow-box {
+     position: relative;
+     top: 15%;
+     width: 200px;
+     height: 200px;
+}
+
+.shadow-box:after {
+    position: absolute;
+    width: 78%;
+    height: 17%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    z-index: -1;
+    bottom: 0%;
+    content: "";
+    box-shadow: 0 50px 14px rgba(0,0,0,0.69);
+}
+
+@media only screen and (max-width: 699px) {
+    #home-link img {
+        height: 50px;
+    }
+    
+    #flex-container {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0,-50%);
+    }
+  
+    #logo {
+        display: none;
+    }
+    
+    #responsive-team-logo {
+        display: unset;
+    }
+}

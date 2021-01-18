@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#logo {
+    position: absolute;
+    z-index: 1;
+    height: 70px;
+    padding: 20px;
+}
+
+#help {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    padding: 20px;
+}
+
+#help-window-container {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    opacity: 0;
+    z-index: 0;
+}
+
+#help-window-container.active {
+    z-index: 1;
+    opacity: .5;
+}
+
+#help-window {
+    display: none;
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: #bababa;
+    border-radius: 2px;
+}
+
+#help-window.active {
+    display: unset;
+}
+
+#close-help {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+}
+
+#close-help:hover i {
+    color: #CF5300;
+}
+
+#close-help i {
+    color: #FFF;
+}
+
+#help-header {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    background: #1E1E1E;
+    color: #FFF;
+}
+
+#help-text {
+    padding: 40px 27px;
+}
+
+#help i {
+    font-size: 30px;
+    color: #FFF;
+}
+
+#help i:hover {
+    color: #CF5300;
+}
+
+#help.active i {
+    color: #CF5300;
+}
+
+#master {
+    height: 100vh;
+    width: 100%;
+    background: #1E1E1E;
+    color: #C6937D;
+}
+
+#flex-container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #1E1E1E;
+    text-align: center;
+}
+
+.division {
+    width: 280px;
+    padding: 0 25px;
+}
+
+.division-logo {
+    height: 50px;
+    padding-bottom: 10px;
+}
+
+.team {
+    position: relative;
+    background: #1E1E1E;
+    text-align: center;
+    height: 30px;
+}
+
+.team:nth-child(even) {
+    background: #101010;
+}
+
+.team:nth-child(even) a {
+    color: #bababa;
+}
+
+.team a:hover{
+    color: #FFFFFF;
+}
+
+.team-link {
+    display: block;
+    text-decoration: none;
+    color: #C6937D;
+}
+
+.team-link img {
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translate(0,-50%);
+    height: 25px;
+}
+
+.team-link span {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media only screen and (max-width: 659px) {
+    #flex-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(0,0);
+    }
+  
+    .division-logo {
+        padding-top: 50px;
+    }
+    
+    #logo {
+        height: 50px;
+    }
+  
+    #west {
+        padding-bottom: 20px;
+    }
+}

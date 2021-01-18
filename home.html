@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Bucket</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="icon" href="./imgs/logo.png">
+</head>
+<body>
+    <img id="logo" src="./imgs/logo.png" alt="site-logo"/>
+    <div id="help"><i class="fas fa-question-circle"></i></div>
+    <div id="help-window-container"></div>
+    <div id="help-window">
+        <div id="close-help">
+            <i class="fas fa-times"></i>
+        </div>
+        <div id="help-header">
+            First Bucket Help
+        </div>
+        <div id="help-text">
+            Welcome to the First Bucket web app. From the homepage, you can select any team and you will see which player on the selected team scored the first overall bucket or first team bucket for each game.
+        </div>
+    </div>
+    <script src="./js/home.js"></script>
+    <div id="master">
+        <div id="flex-container">
+            <div id="east" class="division">
+                <img class="division-logo" src="./imgs/EAST.svg"/>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=0">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/atl.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Atlana Hawks</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=1">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/bkn.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Brooklyn Nets</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=2">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/bos.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Boston Celtics</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=3">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/cha.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Charlotte Hornets</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=4">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/chi.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Chicago Bulls</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=5">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/cle.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Cleveland Cavaliers</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=8">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/det.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Detroit Pistons</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=11">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/ind.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Indiana Pacers</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=15">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/mia.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Miami Heat</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=16">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/mil.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Milwaukee Bucks</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=19">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/ny.png&h=100&w=100" alt="Team Logo"/>
+                        <span>New York Knicks</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=21">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/orl.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Orlando Magic</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=22">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/phi.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Philadelphia 76ers</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=27">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/tor.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Toronto Raptors</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=29">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/wsh.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Washington Wizards</span>
+                    </a>
+                </div>
+            </div>
+            <!-- end of east -->
+            
+            <div id="west" class="division">
+                <img class="division-logo" src="./imgs/WEST.svg"/>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=6">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/dal.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Dallas Mavericks</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=7">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/den.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Denver Nuggets</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=9">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/gs.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Golden State Warriors</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=10">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/hou.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Houston Rockets</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=12">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/lac.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Los Angeles Clippers</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=13">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/lal.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Los Angeles Lakers</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=14">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/mem.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Memphis Grizzlies</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=17">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/min.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Minnesota Timberwolves</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=18">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/no.png&h=100&w=100" alt="Team Logo"/>
+                        <span>New Orleans Pelicans</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=20">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/okc.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Oklahoma City Thunder</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=23">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/phx.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Phoenix Suns</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=24">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/por.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Portland Trailblazers</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=25">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/sac.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Sacramento Kings</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=26">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/sa.png&h=100&w=100" alt="Team Logo"/>
+                        <span>San Antonio Spurs</span>
+                    </a>
+                </div>
+                <div class="team">
+                    <a class="team-link" href="./stats.php?team_id=28">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/utah.png&h=100&w=100" alt="Team Logo"/>
+                        <span>Utah Jazz</span>
+                    </a>
+                </div>
+            </div>
+            <!-- end of west -->
+        </div>
+    </div>
+</body>
+</html>
