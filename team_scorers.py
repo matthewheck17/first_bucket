@@ -14,17 +14,17 @@ mycursor = conn.cursor()
 
 TEAM_ACRONYMS = ["atl", "bkn", "bos", "cha", "chi", "cle", "dal", "den", "det", "gs", "hou", "ind", "lac", "lal", "mem", "mia", "mil", "min", "no", "nyk", "okc", "orl", "phi", "phx", "por", "sac", "sas", "tor", "utah", "was"]
 
-for selected_team in range(0, 30):
+for selected_team in range(0, 30): #loop through each team
     print(selected_team)
     print(TEAM_ACRONYMS[selected_team])
     if selected_team == 19:
-        #knicks logo is named incorrectly on espns site too lol
+        #knicks logo is named incorrectly on espn --- needs special case
         TEAM_LOGO = "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/ny.png&h=100&w=100"
     elif selected_team == 26:
-        #spurs logo is named incorrectly on espns site too omegalul
+        #spurs logo is named incorrectly on espn --- needs special case
         TEAM_LOGO = "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/sa.png&h=100&w=100"
     elif selected_team == 29:
-        #wiz logo is named incorrectly on espns site too omegalul
+        #wiz logo is named incorrectly on espn --- needs special case
         TEAM_LOGO = "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/wsh.png&h=100&w=100"
     else:
         TEAM_LOGO = "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/" + TEAM_ACRONYMS[selected_team] + ".png&h=100&w=100" # insert team logo here
@@ -71,7 +71,7 @@ for selected_team in range(0, 30):
             logo_td = score_td.previousSibling
             logo_img = logo_td.find('img')
             logo_src = logo_img['src']
-            if "free throw" not in score_td.text: #if its not a free throw it counts
+            if "free throw" not in score_td.text: # if its not a free throw it counts
                 if logo_src == TEAM_LOGO: #if it was a bucket made by the selected team
                     found = True
                     first_score = all_scores[i]
